@@ -11,7 +11,9 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Usage](#usage)
+  - [Test](#test)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -77,9 +79,22 @@ In order to run this project you need:
 - IRBM
 - Ruby
 
-### Usage
+### Install <a name="install"></a>
 
-To make use of the project, you must create or have a vet_clinic database with a table.
+This project just needs a Ruby interpreter. However, it uses RuboCop as a tester and as linter.
+You can install it with the following command:
+<code> bundle install </code>
+
+### Usage <a name="usage"></a>
+
+To make use of the project, you must be able to run Ruby code in your computer. 
+One way of doing this is by Installing WSL (if you are on Windows) and using the IRB terminal to run the code.
+
+### Test <a name="test"></a>
+
+To run the tests, you need to execute the following command:
+rubocop
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
