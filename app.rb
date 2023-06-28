@@ -38,7 +38,7 @@ class App
       create_student
     elsif person_class == '2'
       create_teacher
-    else 
+    else
       puts 'Invalid input! Please insert 1 (one) or 2 (two)'
     end
     @main.menu
@@ -56,7 +56,6 @@ class App
     puts
     puts 'Person (student) created successfully.'
   end
-  
 
   def create_teacher
     print 'Age: '
@@ -66,7 +65,7 @@ class App
     teacher_name = gets.chomp
     print 'Specialization: '
     specialization = gets.chomp
-    person = Teacher.new(teacher_age, teacher_name, specialization)
+    person = Teacher.new(teacher_age, specialization, teacher_name)
     @people << person
     puts
     puts 'Person (teacher) created successfuly.'
@@ -107,7 +106,6 @@ class App
     @rentals << rental
     puts 'Your selected book has been rented'
     @main.menu
-
   end
 
   def rentals_person_list
@@ -119,7 +117,7 @@ class App
     puts
     print 'Person`s ID: '
     renter_id = gets.chomp.to_i
-  
+
     puts 'Books rented:'
     puts
     rentals_for_id = @rentals.select { |rental| rental.person.id == renter_id }
@@ -134,10 +132,8 @@ class App
 
     @main.menu
   end
-  
 
   def end
     puts 'Closing process...'
   end
-
 end
