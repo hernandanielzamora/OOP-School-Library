@@ -46,7 +46,6 @@ class App
 
   def create_student
     print 'Age: '
-    student_age = gets.chomp.to_i
     print 'Name: '
     student_name = gets.chomp
     print 'Has parent permission? [Y/N]: '
@@ -60,7 +59,6 @@ class App
   def create_teacher
     print 'Age: '
     teacher_age = gets.chomp
-    teacher_age.to_i
     print 'Name: '
     teacher_name = gets.chomp
     print 'Specialization: '
